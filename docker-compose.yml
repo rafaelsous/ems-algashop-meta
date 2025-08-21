@@ -5,9 +5,4 @@ services:
       - "8780:8080"
     volumes:
       - ./etc/wiremock:/home/wiremock/mappings
-    command: ["--verbose"]
-#    healthcheck:
-#      test: ["CMD", "curl", "-f", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"]
-#      interval: 10s
-#      timeout: 5s
-#      retries: 5
+    command: ["--verbose", "--disable-http2-plain"]
