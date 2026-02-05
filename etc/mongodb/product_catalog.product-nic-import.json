@@ -1,7 +1,7 @@
 [
   {
     "_id": { "$uuid": "946cea3b-d11d-4f11-b88d-3089b4e74087" },
-    "addedAt": { "$date": "2024-06-14T19:46:33.013Z" },
+    "createdAt": { "$date": "2024-06-14T19:46:33.013Z" },
     "updatedAt": { "$date": "2024-06-14T20:17:51.362Z" },
     "version": { "$numberLong": "2" },
     "name": "HyperNova Pro X11 Intel Core i9, 32GB RAM",
@@ -19,7 +19,7 @@
   },
   {
     "_id": { "$uuid": "2eea613a-3a11-46dd-95ee-2678c295559e" },
-    "addedAt": { "$date": "2024-06-14T19:54:56.946Z" },
+    "createdAt": { "$date": "2024-06-14T19:54:56.946Z" },
     "updatedAt": { "$date": "2024-06-14T20:17:39.403Z" },
     "version": { "$numberLong": "3" },
     "name": "StellarForge D7 AMD Ryzen 9",
@@ -37,7 +37,7 @@
   },
   {
     "_id": { "$uuid": "abdc585c-9153-49f0-b1f9-9f01cca6901c" },
-    "addedAt": { "$date": "2024-06-14T19:56:35.478Z" },
+    "createdAt": { "$date": "2024-06-14T19:56:35.478Z" },
     "updatedAt": { "$date": "2024-06-14T19:57:24.867Z" },
     "version": { "$numberLong": "3" },
     "name": "QuantumEdge Z Desktop and Screen 1080p",
@@ -55,7 +55,7 @@
   },
   {
     "_id": { "$uuid": "a8ce5aa8-0cbb-4a68-92e7-d43ec7a53b49" },
-    "addedAt": { "$date": "2024-06-14T19:59:59.988Z" },
+    "createdAt": { "$date": "2024-06-14T19:59:59.988Z" },
     "updatedAt": { "$date": "2024-06-14T19:59:59.988Z" },
     "version": { "$numberLong": "0" },
     "name": "StellarMatrix Tower Server",
@@ -73,7 +73,7 @@
   },
   {
     "_id": { "$uuid": "b573779c-7276-4b39-afc3-3827a7dd5fc3" },
-    "addedAt": { "$date": "2024-06-14T20:01:16.597Z" },
+    "createdAt": { "$date": "2024-06-14T20:01:16.597Z" },
     "updatedAt": { "$date": "2024-06-14T20:01:29.257Z" },
     "version": { "$numberLong": "1" },
     "name": "NebulaLink Desktop Vintage",
@@ -91,7 +91,7 @@
   },
   {
     "_id": { "$uuid": "19274f99-e0d2-40b1-9b3a-912cb0982f11" },
-    "addedAt": { "$date": "2024-06-14T20:03:36.802Z" },
+    "createdAt": { "$date": "2024-06-14T20:03:36.802Z" },
     "updatedAt": { "$date": "2024-06-14T20:03:50.716Z" },
     "version": { "$numberLong": "1" },
     "name": "AuraBook RAM DDR4 4000Mhz",
@@ -109,7 +109,7 @@
   },
   {
     "_id": { "$uuid": "8fd9f73a-b0b6-4a4c-96b1-e1ba36602333" },
-    "addedAt": { "$date": "2024-06-14T20:06:01.812Z" },
+    "createdAt": { "$date": "2024-06-14T20:06:01.812Z" },
     "updatedAt": { "$date": "2024-06-14T20:06:20.123Z" },
     "version": { "$numberLong": "2" },
     "name": "QuantumBlade DDR5 5899Mhz 3x8GB Pack red",
@@ -127,7 +127,7 @@
   },
   {
     "_id": { "$uuid": "3a40e8a1-ec61-434b-92e5-b4dae61eddd0" },
-    "addedAt": { "$date": "2024-06-14T20:06:52.349Z" },
+    "createdAt": { "$date": "2024-06-14T20:06:52.349Z" },
     "updatedAt": { "$date": "2024-06-14T20:07:00.162Z" },
     "version": { "$numberLong": "1" },
     "name": "QuantumBlade DDR5 5899Mhz 3x8GB Pack Blue",
@@ -145,7 +145,7 @@
   },
   {
     "_id": { "$uuid": "7439c2b9-f14c-452d-86f4-505d211e4974" },
-    "addedAt": { "$date": "2024-06-14T20:17:12.682Z" },
+    "createdAt": { "$date": "2024-06-14T20:17:12.682Z" },
     "updatedAt": { "$date": "2024-06-14T20:17:18.788Z" },
     "version": { "$numberLong": "1" },
     "name": "QuantumBlade DDR5 5899Mhz 3x8GB Pack White",
@@ -163,7 +163,7 @@
   },
   {
     "_id": { "$uuid": "3b3ea346-959e-4844-ab32-62455802cb63" },
-    "addedAt": { "$date": "2024-06-14T20:20:31.941Z" },
+    "createdAt": { "$date": "2024-06-14T20:20:31.941Z" },
     "updatedAt": { "$date": "2024-06-14T20:20:44.596Z" },
     "version": { "$numberLong": "1" },
     "name": "Matrix T6 Andruuid 12 4G",
@@ -181,7 +181,7 @@
   },
   {
     "_id": { "$uuid": "a5638e2f-1b9a-4265-88fb-634dd5f5fe5d" },
-    "addedAt": { "$date": "2024-06-14T20:21:30.683Z" },
+    "createdAt": { "$date": "2024-06-14T20:21:30.683Z" },
     "updatedAt": { "$date": "2024-06-14T20:21:51.190Z" },
     "version": { "$numberLong": "3" },
     "name": "Matrix T3 Andruuid 8 3G",
@@ -199,7 +199,7 @@
   },
   {
     "_id": { "$uuid": "5805e415-1ca0-45e2-9764-6fd5d1eb2339" },
-    "addedAt": { "$date": "2024-06-14T20:23:33.439Z" },
+    "createdAt": { "$date": "2024-06-14T20:23:33.439Z" },
     "updatedAt": { "$date": "2024-06-14T20:23:49.658Z" },
     "version": { "$numberLong": "1" },
     "name": "NebulaLink Desktop M7 Intel Core i7, 16GB RGB RAM",
