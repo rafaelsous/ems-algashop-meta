@@ -9,7 +9,11 @@ export const options = {
     { duration: '10s', target: 1000 },
     { duration: '3s', target: 300 },
     { duration: '3s', target: 0 },
-  ]
+  ],
+  thresholds: {
+    http_req_duration: ['p(95) < 800'], // 95% of requests should be below 800ms
+    http_req_failed: ['rate < 0.01'], // Less than 1% of requests should fail
+  }
 };
 
 export default function smokeTest() {
