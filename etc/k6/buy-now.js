@@ -11,13 +11,9 @@ export const options = {
       duration: '5s', // Duration of the test
     },
     buy_now_volume_test: {
-      executor: 'constant-arrival-rate',
-      rate: 100, // Number of iterations to start per second
-      timeUnit: '1s', // Time unit for the rate
-      duration: '1m', // Duration of the test
-      startTime: '5s', // Start after the smoke test
-      maxVUs: 200, // Maximum number of VUs to allow
-      preAllocatedVUs: 50, // Pre-allocate VUs to handle the load
+      executor: 'constant-vus',
+      vus: 50, // Number of virtual users
+      duration: '5s', // Duration of the test
     },
   },
   thresholds: {

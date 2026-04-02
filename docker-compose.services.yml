@@ -16,6 +16,8 @@ services:
           memory: 256M
     environment:
       SPRING_PROFILES_ACTIVE: docker
+      SERVER_TOMCAT_THREADS_MAX: 10 # Default value is 200
+      SPRING_THREADS_VIRTUAL_ENABLED: true # Default value is false
 
   algashop-billing:
     image: rafaelsousa86/billing:dev
