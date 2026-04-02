@@ -170,6 +170,9 @@ services:
       LOCALSTACK_AUTH_TOKEN: ${LOCALSTACK_AUTH_TOKEN:?}  # required for Pro
       # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
       DEBUG: 1 # Enable debug mode
+    volumes:
+      - ./etc/aws/init.sh:/etc/localstack/init/ready.d/init-aws.sh
+      - ./etc/aws:/etc/aws
     healthcheck:
       test: curl --location 'http://localhost:4566/_localstack/health'
       interval: 5s
