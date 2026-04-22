@@ -5,3 +5,7 @@
 127.0.0.1 algashop-localstack
 127.0.0.1 s3.algashop-localstack
 127.0.0.1 algashop-product-image.algashop-localstack
+
+127.0.0.1 algashop-authorization-server
+
+127.0.0.1 algashop-ecommerce
