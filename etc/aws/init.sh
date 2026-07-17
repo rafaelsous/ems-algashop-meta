@@ -8,6 +8,10 @@ echo "$AWS_ACCESS_KEY_ID"
 echo "$AWS_SECRET_ACCESS_KEY"
 echo "$AWS_DEFAULT_REGION"
 
+awslocal secretsmanager create-secret \
+    --name /secret/algashop/authorization-server/database \
+    --secret-string "{\"username\":\"postgres\",\"password\":\"postgres\"}"
+
 awslocal s3 mb s3://algashop-product-image
 
 awslocal s3api put-bucket-cors --bucket algashop-product-image --cors-configuration file:///etc/aws/cors.json
