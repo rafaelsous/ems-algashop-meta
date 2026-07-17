@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# ENVIRONMENTS
 AWS_ACCESS_KEY_ID=LS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY=LS_SECRET_ACCESS_KEY
 AWS_DEFAULT_REGION=LS_REGION
@@ -8,10 +9,26 @@ echo "$AWS_ACCESS_KEY_ID"
 echo "$AWS_SECRET_ACCESS_KEY"
 echo "$AWS_DEFAULT_REGION"
 
+# KEY RSA
+openssl genpkey -algorithm RSA -out /tmp/algashop-private-key.pem -pkeyopt rsa_keygen_bits:2048
+
+PRIVATE_KEY_B64=$(base64 -w 0 /tmp/algashop-private-key.pem)
+
+PRIVATE_KEY_ID=$(openssl rand -hex 16)
+
+printf '{"privateKeyId":"%s","privateKey":"%s"}' \
+  "$PRIVATE_KEY_ID" "$PRIVATE_KEY_B64" > /tmp/secret.json
+
+# AWS SECRET MANAGER
+awslocal secretsmanager create-secret \
+  --name /config/algashop/authorization-server/rsa-key \
+  --secret-string file:///tmp/secret.json
+
 awslocal secretsmanager create-secret \
     --name /secret/algashop/authorization-server/database \
     --secret-string "{\"username\":\"postgres\",\"password\":\"postgres\"}"
 
+# AWS PARAMETER STORE
 awslocal ssm put-parameter \
     --name /config/algashop/authorization-server/datasource/url \
     --value "jdbc:postgresql://algashop-postgres:5432/authorization_server" \
@@ -34,6 +51,7 @@ awslocal ssm put-parameter \
     --value "http://auth.algashop.local:8081" \
     --type String
 
+# AWS S3
 awslocal s3 mb s3://algashop-product-image
 
 awslocal s3api put-bucket-cors --bucket algashop-product-image --cors-configuration file:///etc/aws/cors.json
