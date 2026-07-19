@@ -36,7 +36,7 @@ name,type,value
 /config/algashop/ordering/redis/timeout,String,600
 /config/algashop/ordering/integrations/shipping-provider,String,RAPIDEX
 /config/algashop/ordering/integrations/rapidex-url,String,http://wiremock:8787
-/config/algashop/ordering/integrations/product-catalog-url,String,http://algashop-product-catalog:8083
+/config/algashop/ordering/integrations/product-catalog-url,String,http://product-catalog
 /config/algashop/ordering/shipping/have-free-shipping/rule1/active,String,true
 /config/algashop/ordering/shipping/have-free-shipping/rule1/min-points,String,100
 /config/algashop/ordering/shipping/have-free-shipping/rule1/min-sales-quantity,String,2
