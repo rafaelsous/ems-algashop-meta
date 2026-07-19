@@ -170,7 +170,7 @@ services:
       LOCALSTACK_AUTH_TOKEN: ${LOCALSTACK_AUTH_TOKEN:?}  # required for Pro
       # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
       DEBUG: 1 # Enable debug mode
-      LS_ACCESS_KEY_ID: LSIAQAAAAAAVNCBMPNSG
+      LS_ACCESS_KEY_ID: test
       LS_SECRET_ACCESS_KEY: test
       LS_REGION: us-east-1
     volumes:

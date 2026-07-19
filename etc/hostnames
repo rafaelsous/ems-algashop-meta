@@ -9,6 +9,8 @@
 127.0.0.1 algashop-authorization-server
 127.0.0.1 algashop-billing
 127.0.0.1 algashop-product-catalog
+127.0.0.1 algashop-service-registry
+127.0.0.1 algashop-mailpit
 
 127.0.0.1 algashop-ecommerce
 
@@ -22,5 +24,4 @@
 127.0.0.1 algashop-redis
 
 127.0.0.1 wiremock
-
-127.0.0.1 service-registry
+127.0.0.1 fastpay

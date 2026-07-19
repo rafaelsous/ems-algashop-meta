@@ -5,7 +5,7 @@ name,type,value
 /config/algashop/authorization-server/clients/algashop-ordering-service/secret,SecureString,{bcrypt}$2a$10$Bf4N926CyjieughTqkgyD.g6yUF7pYHv9kI.ExPRgBauuRj6i/2AC
 /config/algashop/authorization-server/clients/algashop-ecommerce-web/secret,SecureString,{bcrypt}$2a$10$PMQ27hh0lU62uJsZsY49qOEHXAWwJD8KydtaWUwdvy1Ctlf4s87cm
 /config/algashop/authorization-server/clients/algashop-ecommerce-m2m/secret,SecureString,{bcrypt}$2a$10$eZ8iYaqjWIquHUUQolwJWOUDYJrnNdB9w9rjCZbplUDIQZyadPjWu
-/config/algashop/authorization-server/mail/host,String,localhost
+/config/algashop/authorization-server/mail/host,String,algashop-mailpit
 /config/algashop/authorization-server/mail/port,String,1025
 /config/algashop/authorization-server/logging/security-level,String,TRACE
 /config/algashop/authorization-server/jpa/show-sql,String,true
@@ -22,12 +22,13 @@ name,type,value
 /config/algashop/authorization-server/clients/algashop-admin-web/redirect-uris,StringList,http://admin.algashop.local:4200,http://admin.algashop.local:4200/silent-refresh.html,https://oauth.pstmn.io/v1/callback
 /config/algashop/authorization-server/clients/algashop-admin-web/post-logout-redirect-uris,StringList,http://admin.algashop.local:4200
 /config/algashop/shared/auth-server-url,String,http://auth.algashop.local:8081
+/config/algashop/shared/service-registry-url,String,http://algashop-service-registry:8761
 /config/algashop/billing/datasource/url,String,jdbc:postgresql://algashop-postgres:5432/billing
 /config/algashop/billing/jpa/show-sql,String,true
-/config/algashop/billing/fastpay/hostname,String,http://localhost:9995
+/config/algashop/billing/fastpay/hostname,String,http://fastpay:9995
 /config/algashop/billing/fastpay/webhook-url,String,http://host.docker.internal:8082/api/v1/webhooks/fastpay
 /config/algashop/billing-scheduler/datasource/url,String,jdbc:postgresql://algashop-postgres:5432/billing
-/config/algashop/billing-scheduler/fastpay/hostname,String,http://localhost:9995
+/config/algashop/billing-scheduler/fastpay/hostname,String,http://fastpay:9995
 /config/algashop/ordering/datasource/url,String,jdbc:postgresql://algashop-postgres:5432/ordering
 /config/algashop/ordering/jpa/show-sql,String,true
 /config/algashop/ordering/redis/host,String,algashop-redis
@@ -42,7 +43,7 @@ name,type,value
 /config/algashop/ordering/shipping/have-free-shipping/rule1/min-sales-quantity,String,2
 /config/algashop/ordering/shipping/have-free-shipping/rule2/active,String,true
 /config/algashop/ordering/shipping/have-free-shipping/rule2/min-points,String,2000
-/config/algashop/product-catalog/mongodb/uri,String,mongodb://localhost:27017,localhost:27018,localhost:27019/product_catalog?replicaSet=rs0
+/config/algashop/product-catalog/mongodb/uri,String,mongodb://algashop-mongodb-1:27017,algashop-mongodb-2:27017,algashop-mongodb-3:27017/product_catalog?replicaSet=rs0
 /config/algashop/product-catalog/redis/host,String,algashop-redis
 /config/algashop/product-catalog/redis/port,String,6379
 /config/algashop/product-catalog/redis/database,String,0
