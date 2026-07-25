@@ -8,17 +8,21 @@
 
 127.0.0.1 algashop-authorization-server
 127.0.0.1 algashop-billing
+127.0.0.1 algashop-ordering
 127.0.0.1 algashop-product-catalog
 127.0.0.1 algashop-service-registry
 127.0.0.1 algashop-mailpit
+127.0.0.1 algashop-gateway-ecommerce
 
 127.0.0.1 algashop-ecommerce
-
 127.0.0.1 algashop-admin
 
 127.0.0.1 algashop.local
 127.0.0.1 admin.algashop.local
+127.0.0.1 api.algashop.local
 127.0.0.1 auth.algashop.local
+127.0.0.1 ecommerce-api.algashop.local
+127.0.0.1 admin-api.algashop.local
 
 127.0.0.1 algashop-postgres
 127.0.0.1 algashop-redis
