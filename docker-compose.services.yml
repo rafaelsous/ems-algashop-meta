@@ -10,6 +10,8 @@ services:
     depends_on:
       algashop-postgres:
         condition: service_healthy
+      algashop-redis:
+        condition: service_started
     deploy:
       resources:
         limits:
@@ -43,11 +45,11 @@ services:
       algashop-mongodb-1:
         condition: service_healthy
       algashop-mongodb-2:
-        condition: service_healthy
+        condition: service_started
       algashop-mongodb-3:
-        condition: service_healthy
+        condition: service_started
       algashop-redis:
-        condition: service_healthy
+        condition: service_started
     deploy:
       resources:
         limits:
@@ -74,7 +76,6 @@ services:
   algashop-service-registry:
     image: rafaelsousa86/service-registry:dev
     restart: no
-    hostname: auth.algashop.local
     ports:
       - 8761:8761
     deploy:
@@ -89,6 +90,42 @@ services:
     restart: no
     ports:
       - 9999:9999
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  algashop-gateway-admin:
+    image: rafaelsousa86/gateway-admin:dev
+    restart: no
+    ports:
+      - 9998:9998
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  algashop-admin-app:
+    image: rafaelsousa86/algashop-admin:dev
+    restart: no
+    ports:
+      - 4200:80
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  algashop-ecommerce-app:
+    image: rafaelsousa86/algashop-ecommerce:dev
+    restart: no
+    ports:
+      - 9080:9080
     deploy:
       resources:
         limits:
