@@ -1,0 +1,48 @@
+[submodule "apps/admin"]
+	path = apps/admin
+	url = https://github.com/rafaelsous/ems-algashop-admin.git
+	branch = main
+[submodule "apps/ecommerce"]
+	path = apps/ecommerce
+	url = https://github.com/rafaelsous/ems-algashop-ecommerce.git
+	branch = main
+[submodule "microservices/authorization-server"]
+	path = microservices/authorization-server
+	url = https://github.com/rafaelsous/ems-algashop-authorization-server.git
+	branch = main
+[submodule "microservices/billing"]
+	path = microservices/billing
+	url = git@github.com:rafaelsous/ems-algashop-billing.git
+	branch = main
+[submodule "microservices/billing-scheduler"]
+	path = microservices/billing-scheduler
+	url = git@github.com:rafaelsous/ems-algashop-billing-scheduler.git
+	branch = main
+[submodule "microservices/gateway-admin"]
+	path = microservices/gateway-admin
+	url = https://github.com/rafaelsous/ems-algashop-gateway-admin
+	branch = main
+[submodule "microservices/gateway-ecommerce"]
+	path = microservices/gateway-ecommerce
+	url = https://github.com/rafaelsous/ems-algashop-gateway-ecommerce.git
+	branch = main
+[submodule "microservices/ordering"]
+	path = microservices/ordering
+	url = git@github.com:rafaelsous/ems-algashop-ordering.git
+	branch = main
+[submodule "microservices/product-catalog"]
+	path = microservices/product-catalog
+	url = git@github.com:rafaelsous/ems-algashop-product-catalog.git
+	branch = main
+[submodule "template"]
+	path = template
+	url = git@github.com:rafaelsous/ems-algashop-template.git
+	branch = main
+[submodule "docs"]
+	path = docs
+	url = git@github.com:rafaelsous/ems-algashop-docs.git
+	branch = main
+[submodule "microservices/service-registry"]
+	path = microservices/service-registry
+	url = https://github.com/rafaelsous/ems-algashop-service-registry.git
+	branch = main
