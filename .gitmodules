@@ -46,3 +46,7 @@
 	path = microservices/service-registry
 	url = https://github.com/rafaelsous/ems-algashop-service-registry.git
 	branch = main
+[submodule "microservices/notifications"]
+	path = microservices/notifications
+	url = git@github.com:rafaelsous/ems-algashop-notifications.git
+	branch = main
